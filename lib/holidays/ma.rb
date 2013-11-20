@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/ma.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,15 +18,15 @@ module Holidays
 
     def self.holidays_by_month
       {
-              1 => [{:mday => 1, :name => "Ras l' âm", :regions => [:ma]},
-            {:mday => 11, :name => "Takdim watikat al-istiqlal", :regions => [:ma]}],
-      5 => [{:mday => 1, :name => "Eid Ash-Shughl", :regions => [:ma]}],
-      7 => [{:mday => 30, :name => "Eid Al-Ârch", :regions => [:ma]}],
-      8 => [{:mday => 14, :name => "Zikra Oued Ed-Dahab", :regions => [:ma]},
-            {:mday => 20, :name => "Thawrat al malik wa shâab", :regions => [:ma]},
-            {:mday => 21, :name => "Eid Al Milad", :regions => [:ma]}],
-      11 => [{:mday => 6, :name => "Eid Al Massira Al Khadra", :regions => [:ma]},
-            {:mday => 18, :name => "Eid Al Istiqulal", :regions => [:ma]}]
+              1 => [{:mday => 1, :key => "", :name => "Ras l' âm", :regions => [:ma]},
+            {:mday => 11, :key => "", :name => "Takdim watikat al-istiqlal", :regions => [:ma]}],
+      5 => [{:mday => 1, :key => "", :name => "Eid Ash-Shughl", :regions => [:ma]}],
+      7 => [{:mday => 30, :key => "", :name => "Eid Al-Ârch", :regions => [:ma]}],
+      8 => [{:mday => 14, :key => "", :name => "Zikra Oued Ed-Dahab", :regions => [:ma]},
+            {:mday => 20, :key => "", :name => "Thawrat al malik wa shâab", :regions => [:ma]},
+            {:mday => 21, :key => "", :name => "Eid Al Milad", :regions => [:ma]}],
+      11 => [{:mday => 6, :key => "", :name => "Eid Al Massira Al Khadra", :regions => [:ma]},
+            {:mday => 18, :key => "", :name => "Eid Al Istiqulal", :regions => [:ma]}]
       }
     end
   end

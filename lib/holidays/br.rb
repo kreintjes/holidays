@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/br.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,18 +18,18 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-47 }, :function_id => "easter(year)-47", :type => :informal, :name => "Carnaval", :regions => [:br]},
-            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Sexta-feira Santa", :regions => [:br]},
-            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "Páscoa", :regions => [:br]},
-            {:function => lambda { |year| Holidays.easter(year)+60 }, :function_id => "easter(year)+60", :name => "Corpus Christi", :regions => [:br]}],
-      1 => [{:mday => 1, :name => "Dia da Confraternização Universal", :regions => [:br]}],
-      4 => [{:mday => 21, :name => "Dia de Tiradentes", :regions => [:br]}],
-      5 => [{:mday => 1, :name => "Dia do Trabalho", :regions => [:br]}],
-      9 => [{:mday => 7, :name => "Proclamação da Independência", :regions => [:br]}],
-      10 => [{:mday => 12, :name => "Dia de Nossa Senhora Aparecida", :regions => [:br]}],
-      11 => [{:mday => 2, :name => "Dia de Finados", :regions => [:br]},
-            {:mday => 15, :name => "Proclamação da República", :regions => [:br]}],
-      12 => [{:mday => 25, :name => "Natal", :regions => [:br]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-47 }, :function_id => "easter(year)-47", :type => :informal, :key => "", :name => "Carnaval", :regions => [:br]},
+            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Sexta-feira Santa", :regions => [:br]},
+            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :key => "", :name => "Páscoa", :regions => [:br]},
+            {:function => lambda { |year| Holidays.easter(year)+60 }, :function_id => "easter(year)+60", :key => "", :name => "Corpus Christi", :regions => [:br]}],
+      1 => [{:mday => 1, :key => "", :name => "Dia da Confraternização Universal", :regions => [:br]}],
+      4 => [{:mday => 21, :key => "", :name => "Dia de Tiradentes", :regions => [:br]}],
+      5 => [{:mday => 1, :key => "", :name => "Dia do Trabalho", :regions => [:br]}],
+      9 => [{:mday => 7, :key => "", :name => "Proclamação da Independência", :regions => [:br]}],
+      10 => [{:mday => 12, :key => "", :name => "Dia de Nossa Senhora Aparecida", :regions => [:br]}],
+      11 => [{:mday => 2, :key => "", :name => "Dia de Finados", :regions => [:br]},
+            {:mday => 15, :key => "", :name => "Proclamação da República", :regions => [:br]}],
+      12 => [{:mday => 25, :key => "", :name => "Natal", :regions => [:br]}]
       }
     end
   end

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/ro.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,18 +18,18 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.orthodox_easter(year) }, :function_id => "orthodox_easter(year)", :name => "Paștele", :regions => [:ro]},
-            {:function => lambda { |year| Holidays.orthodox_easter(year)+1 }, :function_id => "orthodox_easter(year)+1", :name => "Paștele", :regions => [:ro]},
-            {:function => lambda { |year| Holidays.orthodox_easter(year) + 49 }, :function_id => "orthodox_easter(year) + 49", :name => "Rusaliile", :regions => [:ro]},
-            {:function => lambda { |year| Holidays.orthodox_easter(year) + 50 }, :function_id => "orthodox_easter(year) + 50", :name => "Rusaliile", :regions => [:ro]}],
-      1 => [{:mday => 1, :name => "Anul nou", :regions => [:ro]},
-            {:mday => 2, :name => "Anul nou", :regions => [:ro]}],
-      5 => [{:mday => 1, :name => "Ziua muncii", :regions => [:ro]}],
-      8 => [{:mday => 15, :name => "Adormirea Maicii Domnului", :regions => [:ro]}],
-      11 => [{:mday => 30, :name => "Sfântul Apostol Andrei", :regions => [:ro]}],
-      12 => [{:mday => 1, :name => "Ziua Națională", :regions => [:ro]},
-            {:mday => 25, :name => "Sărbătoarea Nașterii Domnului", :regions => [:ro]},
-            {:mday => 26, :name => "Sărbătoarea Nașterii Domnului", :regions => [:ro]}]
+              0 => [{:function => lambda { |year| Holidays.orthodox_easter(year) }, :function_id => "orthodox_easter(year)", :key => "", :name => "Paștele", :regions => [:ro]},
+            {:function => lambda { |year| Holidays.orthodox_easter(year)+1 }, :function_id => "orthodox_easter(year)+1", :key => "", :name => "Paștele", :regions => [:ro]},
+            {:function => lambda { |year| Holidays.orthodox_easter(year) + 49 }, :function_id => "orthodox_easter(year) + 49", :key => "", :name => "Rusaliile", :regions => [:ro]},
+            {:function => lambda { |year| Holidays.orthodox_easter(year) + 50 }, :function_id => "orthodox_easter(year) + 50", :key => "", :name => "Rusaliile", :regions => [:ro]}],
+      1 => [{:mday => 1, :key => "", :name => "Anul nou", :regions => [:ro]},
+            {:mday => 2, :key => "", :name => "Anul nou", :regions => [:ro]}],
+      5 => [{:mday => 1, :key => "", :name => "Ziua muncii", :regions => [:ro]}],
+      8 => [{:mday => 15, :key => "", :name => "Adormirea Maicii Domnului", :regions => [:ro]}],
+      11 => [{:mday => 30, :key => "", :name => "Sfântul Apostol Andrei", :regions => [:ro]}],
+      12 => [{:mday => 1, :key => "", :name => "Ziua Națională", :regions => [:ro]},
+            {:mday => 25, :key => "", :name => "Sărbătoarea Nașterii Domnului", :regions => [:ro]},
+            {:mday => 26, :key => "", :name => "Sărbătoarea Nașterii Domnului", :regions => [:ro]}]
       }
     end
   end

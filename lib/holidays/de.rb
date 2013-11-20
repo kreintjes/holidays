@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/de.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,21 +18,21 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Karfreitag", :regions => [:de]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Ostermontag", :regions => [:de]},
-            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :name => "Christi Himmelfahrt", :regions => [:de]},
-            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :name => "Pfingstmontag", :regions => [:de]},
-            {:function => lambda { |year| Holidays.easter(year)+60 }, :function_id => "easter(year)+60", :name => "Fronleichnam", :regions => [:de_bw, :de_by, :de_he, :de_nw, :de_rp, :de_sl]}],
-      1 => [{:mday => 1, :name => "Neujahrstag", :regions => [:de]},
-            {:mday => 6, :name => "Heilige Drei Könige", :regions => [:de_bw, :de_by, :de_st]}],
-      5 => [{:mday => 1, :name => "Tag der Arbeit", :regions => [:de]}],
-      8 => [{:mday => 15, :name => "Mariä Himmelfahrt", :regions => [:de_by, :de_sl]}],
-      10 => [{:mday => 3, :name => "Tag der Deutschen Einheit", :regions => [:de]},
-            {:mday => 31, :name => "Reformationstag", :regions => [:de_bb, :de_mv, :de_sn, :de_st, :de_th]}],
-      11 => [{:mday => 1, :name => "Allerheiligen", :regions => [:de_bw, :de_by, :de_nw, :de_rp, :de_sl]},
-            {:function => lambda { |year| Holidays.de_buss_und_bettag(year) }, :function_id => "de_buss_und_bettag(year)", :name => "Buß- und Bettag", :regions => [:de_sn]}],
-      12 => [{:mday => 25, :name => "1. Weihnachtstag", :regions => [:de]},
-            {:mday => 26, :name => "2. Weihnachtstag", :regions => [:de]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Karfreitag", :regions => [:de]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Ostermontag", :regions => [:de]},
+            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :key => "", :name => "Christi Himmelfahrt", :regions => [:de]},
+            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :key => "", :name => "Pfingstmontag", :regions => [:de]},
+            {:function => lambda { |year| Holidays.easter(year)+60 }, :function_id => "easter(year)+60", :key => "", :name => "Fronleichnam", :regions => [:de_bw, :de_by, :de_he, :de_nw, :de_rp, :de_sl]}],
+      1 => [{:mday => 1, :key => "", :name => "Neujahrstag", :regions => [:de]},
+            {:mday => 6, :key => "", :name => "Heilige Drei Könige", :regions => [:de_bw, :de_by, :de_st]}],
+      5 => [{:mday => 1, :key => "", :name => "Tag der Arbeit", :regions => [:de]}],
+      8 => [{:mday => 15, :key => "", :name => "Mariä Himmelfahrt", :regions => [:de_by, :de_sl]}],
+      10 => [{:mday => 3, :key => "", :name => "Tag der Deutschen Einheit", :regions => [:de]},
+            {:mday => 31, :key => "", :name => "Reformationstag", :regions => [:de_bb, :de_mv, :de_sn, :de_st, :de_th]}],
+      11 => [{:mday => 1, :key => "", :name => "Allerheiligen", :regions => [:de_bw, :de_by, :de_nw, :de_rp, :de_sl]},
+            {:function => lambda { |year| Holidays.de_buss_und_bettag(year) }, :function_id => "de_buss_und_bettag(year)", :key => "", :name => "Buß- und Bettag", :regions => [:de_sn]}],
+      12 => [{:mday => 25, :key => "", :name => "1. Weihnachtstag", :regions => [:de]},
+            {:mday => 26, :key => "", :name => "2. Weihnachtstag", :regions => [:de]}]
       }
     end
   end

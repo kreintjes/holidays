@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/au.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,28 +18,28 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Good Friday", :regions => [:au]},
-            {:function => lambda { |year| Holidays.easter(year)-1 }, :function_id => "easter(year)-1", :name => "Easter Saturday", :regions => [:au_nsw, :au_vic, :au_qld, :au_nt, :au_act, :au_sa, :au_qld_brisbane]},
-            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "Easter Sunday", :regions => [:au_nsw]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Easter Monday", :regions => [:au]},
-            {:function => lambda { |year| Holidays.easter(year)+2 }, :function_id => "easter(year)+2", :name => "Easter Monday", :regions => [:au_tas]}],
-      1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "New Year's Day", :regions => [:au]},
-            {:mday => 26, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "Australia Day", :regions => [:au]}],
-      3 => [{:wday => 1, :week => 1, :name => "Labour Day", :regions => [:au_wa]},
-            {:wday => 1, :week => 2, :name => "Eight Hours Day", :regions => [:au_tas]},
-            {:wday => 1, :week => 2, :name => "Labour Day", :regions => [:au_vic]}],
-      4 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "ANZAC Day", :regions => [:au]}],
-      5 => [{:function => lambda { |year| Holidays.qld_labour_day_may(year) }, :function_id => "qld_labour_day_may(year)", :name => "Labour Day", :regions => [:au_qld]},
-            {:wday => 1, :week => 1, :name => "May Day", :regions => [:au_nt]}],
-      6 => [{:wday => 1, :week => 1, :name => "Foundation Day", :regions => [:au_wa]},
-            {:wday => 1, :week => 2, :name => "Queen's Birthday", :regions => [:au_act, :au_nsw, :au_sa, :au_qld, :au_tas, :au_nt, :au_vic]},
-            {:mday => 6, :type => :informal, :name => "Queensland Day", :regions => [:au_qld]}],
-      8 => [{:wday => 3, :week => -3, :name => "Ekka", :regions => [:au_qld_brisbane]}],
-      10 => [{:wday => 1, :week => 1, :name => "Labour Day", :regions => [:au_act, :au_nsw, :au_sa]},
-            {:function => lambda { |year| Holidays.qld_labour_day_october(year) }, :function_id => "qld_labour_day_october(year)", :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "Labour Day", :regions => [:au_qld]},
-            {:function => lambda { |year| Holidays.qld_queens_bday_october(year) }, :function_id => "qld_queens_bday_october(year)", :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "Queen's Birthday", :regions => [:au_qld]}],
-      12 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "Christmas Day", :regions => [:au]},
-            {:mday => 26, :observed => lambda { |date| Holidays.to_weekday_if_boxing_weekend(date) }, :observed_id => "to_weekday_if_boxing_weekend", :name => "Boxing Day", :regions => [:au]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Good Friday", :regions => [:au]},
+            {:function => lambda { |year| Holidays.easter(year)-1 }, :function_id => "easter(year)-1", :key => "", :name => "Easter Saturday", :regions => [:au_nsw, :au_vic, :au_qld, :au_nt, :au_act, :au_sa, :au_qld_brisbane]},
+            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :key => "", :name => "Easter Sunday", :regions => [:au_nsw]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Easter Monday", :regions => [:au]},
+            {:function => lambda { |year| Holidays.easter(year)+2 }, :function_id => "easter(year)+2", :key => "", :name => "Easter Monday", :regions => [:au_tas]}],
+      1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "New Year's Day", :regions => [:au]},
+            {:mday => 26, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "Australia Day", :regions => [:au]}],
+      3 => [{:wday => 1, :week => 1, :key => "", :name => "Labour Day", :regions => [:au_wa]},
+            {:wday => 1, :week => 2, :key => "", :name => "Eight Hours Day", :regions => [:au_tas]},
+            {:wday => 1, :week => 2, :key => "", :name => "Labour Day", :regions => [:au_vic]}],
+      4 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "ANZAC Day", :regions => [:au]}],
+      5 => [{:function => lambda { |year| Holidays.qld_labour_day_may(year) }, :function_id => "qld_labour_day_may(year)", :key => "", :name => "Labour Day", :regions => [:au_qld]},
+            {:wday => 1, :week => 1, :key => "", :name => "May Day", :regions => [:au_nt]}],
+      6 => [{:wday => 1, :week => 1, :key => "", :name => "Foundation Day", :regions => [:au_wa]},
+            {:wday => 1, :week => 2, :key => "", :name => "Queen's Birthday", :regions => [:au_act, :au_nsw, :au_sa, :au_qld, :au_tas, :au_nt, :au_vic]},
+            {:mday => 6, :type => :informal, :key => "", :name => "Queensland Day", :regions => [:au_qld]}],
+      8 => [{:wday => 3, :week => -3, :key => "", :name => "Ekka", :regions => [:au_qld_brisbane]}],
+      10 => [{:wday => 1, :week => 1, :key => "", :name => "Labour Day", :regions => [:au_act, :au_nsw, :au_sa]},
+            {:function => lambda { |year| Holidays.qld_labour_day_october(year) }, :function_id => "qld_labour_day_october(year)", :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "Labour Day", :regions => [:au_qld]},
+            {:function => lambda { |year| Holidays.qld_queens_bday_october(year) }, :function_id => "qld_queens_bday_october(year)", :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "Queen's Birthday", :regions => [:au_qld]}],
+      12 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "Christmas Day", :regions => [:au]},
+            {:mday => 26, :observed => lambda { |date| Holidays.to_weekday_if_boxing_weekend(date) }, :observed_id => "to_weekday_if_boxing_weekend", :key => "", :name => "Boxing Day", :regions => [:au]}]
       }
     end
   end

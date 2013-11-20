@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/no.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,22 +18,22 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-49 }, :function_id => "easter(year)-49", :type => :informal, :name => "Fastelavn", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)-7 }, :function_id => "easter(year)-7", :name => "Palmesøndag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)-3 }, :function_id => "easter(year)-3", :name => "Skjærtorsdag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Langfredag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "1. påskedag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "2. påskedag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :name => "Kristi Himmelfartsdag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)+49 }, :function_id => "easter(year)+49", :name => "1. pinsedag", :regions => [:no]},
-            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :name => "2. pinsedag", :regions => [:no]}],
-      1 => [{:mday => 1, :name => "Nyttårsdag", :regions => [:no]}],
-      5 => [{:mday => 1, :name => "1. mai", :regions => [:no]},
-            {:mday => 17, :name => "17. mai", :regions => [:no]}],
-      12 => [{:mday => 24, :type => :informal, :name => "Julaften", :regions => [:no]},
-            {:mday => 25, :name => "1. juledag", :regions => [:no]},
-            {:mday => 26, :name => "2. juledag", :regions => [:no]},
-            {:mday => 31, :type => :informal, :name => "Nyttårsaften", :regions => [:no]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-49 }, :function_id => "easter(year)-49", :type => :informal, :key => "", :name => "Fastelavn", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)-7 }, :function_id => "easter(year)-7", :key => "", :name => "Palmesøndag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)-3 }, :function_id => "easter(year)-3", :key => "", :name => "Skjærtorsdag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Langfredag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :key => "", :name => "1. påskedag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "2. påskedag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :key => "", :name => "Kristi Himmelfartsdag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)+49 }, :function_id => "easter(year)+49", :key => "", :name => "1. pinsedag", :regions => [:no]},
+            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :key => "", :name => "2. pinsedag", :regions => [:no]}],
+      1 => [{:mday => 1, :key => "", :name => "Nyttårsdag", :regions => [:no]}],
+      5 => [{:mday => 1, :key => "", :name => "1. mai", :regions => [:no]},
+            {:mday => 17, :key => "", :name => "17. mai", :regions => [:no]}],
+      12 => [{:mday => 24, :type => :informal, :key => "", :name => "Julaften", :regions => [:no]},
+            {:mday => 25, :key => "", :name => "1. juledag", :regions => [:no]},
+            {:mday => 26, :key => "", :name => "2. juledag", :regions => [:no]},
+            {:mday => 31, :type => :informal, :key => "", :name => "Nyttårsaften", :regions => [:no]}]
       }
     end
   end

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/gb.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,23 +18,23 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Good Friday", :regions => [:gb]},
-            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "Easter Sunday", :regions => [:gb]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Easter Monday", :regions => [:gb_eng, :gb_wls, :gb_eaw, :gb_nir]}],
-      1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "New Year's Day", :regions => [:gb]},
-            {:mday => 2, :name => "New Year's", :regions => [:gb_sct]}],
-      3 => [{:mday => 5, :name => "St. Piran's Day", :regions => [:gb_con]},
-            {:mday => 17, :name => "St. Patrick's Day", :regions => [:gb_nir]}],
-      5 => [{:wday => 1, :week => 1, :name => "May Day", :regions => [:gb]},
-            {:mday => 9, :name => "Liberation Day", :regions => [:je, :gb_jsy, :gg, :gb_gsy]},
-            {:wday => 1, :week => -1, :name => "Bank Holiday", :regions => [:gb]}],
-      7 => [{:mday => 5, :name => "Tynwald Day", :regions => [:im, :gb_iom]},
-            {:mday => 12, :name => "Battle of the Boyne", :regions => [:gb_nir]}],
-      8 => [{:wday => 1, :week => 1, :name => "Bank Holiday", :regions => [:gb_sct]},
-            {:wday => 1, :week => -1, :name => "Bank Holiday", :regions => [:gb_eng, :gb_wls, :gb_eaw, :gb_nir]}],
-      11 => [{:mday => 5, :type => :informal, :name => "Guy Fawkes Day", :regions => [:gb]}],
-      12 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :name => "Christmas Day", :regions => [:gb]},
-            {:mday => 26, :observed => lambda { |date| Holidays.to_weekday_if_boxing_weekend(date) }, :observed_id => "to_weekday_if_boxing_weekend", :name => "Boxing Day", :regions => [:gb]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Good Friday", :regions => [:gb]},
+            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :key => "", :name => "Easter Sunday", :regions => [:gb]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Easter Monday", :regions => [:gb_eng, :gb_wls, :gb_eaw, :gb_nir]}],
+      1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "New Year's Day", :regions => [:gb]},
+            {:mday => 2, :key => "", :name => "New Year's", :regions => [:gb_sct]}],
+      3 => [{:mday => 5, :key => "", :name => "St. Piran's Day", :regions => [:gb_con]},
+            {:mday => 17, :key => "", :name => "St. Patrick's Day", :regions => [:gb_nir]}],
+      5 => [{:wday => 1, :week => 1, :key => "", :name => "May Day", :regions => [:gb]},
+            {:mday => 9, :key => "", :name => "Liberation Day", :regions => [:je, :gb_jsy, :gg, :gb_gsy]},
+            {:wday => 1, :week => -1, :key => "", :name => "Bank Holiday", :regions => [:gb]}],
+      7 => [{:mday => 5, :key => "", :name => "Tynwald Day", :regions => [:im, :gb_iom]},
+            {:mday => 12, :key => "", :name => "Battle of the Boyne", :regions => [:gb_nir]}],
+      8 => [{:wday => 1, :week => 1, :key => "", :name => "Bank Holiday", :regions => [:gb_sct]},
+            {:wday => 1, :week => -1, :key => "", :name => "Bank Holiday", :regions => [:gb_eng, :gb_wls, :gb_eaw, :gb_nir]}],
+      11 => [{:mday => 5, :type => :informal, :key => "", :name => "Guy Fawkes Day", :regions => [:gb]}],
+      12 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_weekend(date) }, :observed_id => "to_monday_if_weekend", :key => "", :name => "Christmas Day", :regions => [:gb]},
+            {:mday => 26, :observed => lambda { |date| Holidays.to_weekday_if_boxing_weekend(date) }, :observed_id => "to_weekday_if_boxing_weekend", :key => "", :name => "Boxing Day", :regions => [:gb]}]
       }
     end
   end

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/pt.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,16 +18,16 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-47 }, :function_id => "easter(year)-47", :type => :informal, :name => "Carnaval", :regions => [:pt]},
-            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Sexta-feira Santa", :regions => [:pt]},
-            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "Páscoa", :regions => [:pt]}],
-      1 => [{:mday => 1, :name => "Ano Novo", :regions => [:pt]}],
-      4 => [{:mday => 25, :name => "Dia da Liberdade", :regions => [:pt]}],
-      5 => [{:mday => 1, :name => "Dia do Trabalhador", :regions => [:pt]}],
-      6 => [{:mday => 10, :name => "Dia de Portugal", :regions => [:pt]}],
-      8 => [{:mday => 15, :name => "Assunção de Nossa Senhora", :regions => [:pt]}],
-      12 => [{:mday => 8, :name => "Imaculada Conceição", :regions => [:pt]},
-            {:mday => 25, :name => "Natal", :regions => [:pt]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-47 }, :function_id => "easter(year)-47", :type => :informal, :key => "", :name => "Carnaval", :regions => [:pt]},
+            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Sexta-feira Santa", :regions => [:pt]},
+            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :key => "", :name => "Páscoa", :regions => [:pt]}],
+      1 => [{:mday => 1, :key => "", :name => "Ano Novo", :regions => [:pt]}],
+      4 => [{:mday => 25, :key => "", :name => "Dia da Liberdade", :regions => [:pt]}],
+      5 => [{:mday => 1, :key => "", :name => "Dia do Trabalhador", :regions => [:pt]}],
+      6 => [{:mday => 10, :key => "", :name => "Dia de Portugal", :regions => [:pt]}],
+      8 => [{:mday => 15, :key => "", :name => "Assunção de Nossa Senhora", :regions => [:pt]}],
+      12 => [{:mday => 8, :key => "", :name => "Imaculada Conceição", :regions => [:pt]},
+            {:mday => 25, :key => "", :name => "Natal", :regions => [:pt]}]
       }
     end
   end

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/es.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,35 +18,35 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-3 }, :function_id => "easter(year)-3", :name => "Jueves Santo", :regions => [:es_pv, :es_ct, :es_na, :es_v, :es_vc]},
-            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Viernes Santo", :regions => [:es]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Lunes de Pascua", :regions => [:es_pv, :es_ct, :es_na, :es_v, :es_vc]}],
-      1 => [{:mday => 1, :name => "Año Nuevo", :regions => [:es]},
-            {:mday => 6, :name => "Día de Reyes", :regions => [:es]}],
-      2 => [{:mday => 28, :name => "Día de Andalucía", :regions => [:es_an]}],
-      3 => [{:mday => 1, :name => "Día de las Islas Baleares", :regions => [:es_ib]},
-            {:mday => 19, :name => "San José", :regions => [:es_v, :es_vc, :es_cm, :es_mu, :es_m]}],
-      4 => [{:mday => 23, :name => "San Jorge", :regions => [:es_ar, :es_cl]},
-            {:mday => 23, :name => "Día de Aragón", :regions => [:es_ar]}],
-      5 => [{:mday => 1, :name => "Día del Trabajador", :regions => [:es]},
-            {:mday => 2, :name => "Fiesta de la Comunidad", :regions => [:es_m]},
-            {:mday => 30, :name => "Día de las Canarias", :regions => [:es_cn]},
-            {:mday => 31, :name => "Día de la Región Castilla-La Mancha", :regions => [:es_cm]}],
-      6 => [{:mday => 9, :name => "Día de la Región de Murcia", :regions => [:es_mu]},
-            {:mday => 9, :name => "Día de La Rioja", :regions => [:es_lo]}],
-      7 => [{:mday => 23, :name => "Santiago Apostol", :regions => [:es_ga]}],
-      8 => [{:mday => 15, :name => "Asunción", :regions => [:es]}],
-      9 => [{:mday => 2, :name => "Día de Ceuta", :regions => [:es_ce]},
-            {:mday => 8, :name => "Día de Asturias", :regions => [:es_o]},
-            {:mday => 8, :name => "Día de Extremadura", :regions => [:es_ex]},
-            {:mday => 11, :name => "Fiesta Nacional de Cataluña", :regions => [:es_ct]}],
-      10 => [{:mday => 9, :name => "Día de Valencia", :regions => [:es_vc, :es_v]},
-            {:mday => 12, :name => "Día de la Hispanidad", :regions => [:es]}],
-      11 => [{:mday => 1, :name => "Todos los Santos", :regions => [:es]}],
-      12 => [{:mday => 6, :name => "Día de la Constitución", :regions => [:es]},
-            {:mday => 8, :name => "Inmaculada Concepción", :regions => [:es]},
-            {:mday => 25, :name => "Navidad del Señor", :regions => [:es]},
-            {:mday => 26, :name => "San Esteban", :regions => [:es_ib, :es_ct]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-3 }, :function_id => "easter(year)-3", :key => "", :name => "Jueves Santo", :regions => [:es_pv, :es_ct, :es_na, :es_v, :es_vc]},
+            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Viernes Santo", :regions => [:es]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Lunes de Pascua", :regions => [:es_pv, :es_ct, :es_na, :es_v, :es_vc]}],
+      1 => [{:mday => 1, :key => "", :name => "Año Nuevo", :regions => [:es]},
+            {:mday => 6, :key => "", :name => "Día de Reyes", :regions => [:es]}],
+      2 => [{:mday => 28, :key => "", :name => "Día de Andalucía", :regions => [:es_an]}],
+      3 => [{:mday => 1, :key => "", :name => "Día de las Islas Baleares", :regions => [:es_ib]},
+            {:mday => 19, :key => "", :name => "San José", :regions => [:es_v, :es_vc, :es_cm, :es_mu, :es_m]}],
+      4 => [{:mday => 23, :key => "", :name => "San Jorge", :regions => [:es_ar, :es_cl]},
+            {:mday => 23, :key => "", :name => "Día de Aragón", :regions => [:es_ar]}],
+      5 => [{:mday => 1, :key => "", :name => "Día del Trabajador", :regions => [:es]},
+            {:mday => 2, :key => "", :name => "Fiesta de la Comunidad", :regions => [:es_m]},
+            {:mday => 30, :key => "", :name => "Día de las Canarias", :regions => [:es_cn]},
+            {:mday => 31, :key => "", :name => "Día de la Región Castilla-La Mancha", :regions => [:es_cm]}],
+      6 => [{:mday => 9, :key => "", :name => "Día de la Región de Murcia", :regions => [:es_mu]},
+            {:mday => 9, :key => "", :name => "Día de La Rioja", :regions => [:es_lo]}],
+      7 => [{:mday => 23, :key => "", :name => "Santiago Apostol", :regions => [:es_ga]}],
+      8 => [{:mday => 15, :key => "", :name => "Asunción", :regions => [:es]}],
+      9 => [{:mday => 2, :key => "", :name => "Día de Ceuta", :regions => [:es_ce]},
+            {:mday => 8, :key => "", :name => "Día de Asturias", :regions => [:es_o]},
+            {:mday => 8, :key => "", :name => "Día de Extremadura", :regions => [:es_ex]},
+            {:mday => 11, :key => "", :name => "Fiesta Nacional de Cataluña", :regions => [:es_ct]}],
+      10 => [{:mday => 9, :key => "", :name => "Día de Valencia", :regions => [:es_vc, :es_v]},
+            {:mday => 12, :key => "", :name => "Día de la Hispanidad", :regions => [:es]}],
+      11 => [{:mday => 1, :key => "", :name => "Todos los Santos", :regions => [:es]}],
+      12 => [{:mday => 6, :key => "", :name => "Día de la Constitución", :regions => [:es]},
+            {:mday => 8, :key => "", :name => "Inmaculada Concepción", :regions => [:es]},
+            {:mday => 25, :key => "", :name => "Navidad del Señor", :regions => [:es]},
+            {:mday => 26, :key => "", :name => "San Esteban", :regions => [:es_ib, :es_ct]}]
       }
     end
   end

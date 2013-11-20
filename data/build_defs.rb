@@ -1,7 +1,7 @@
 require 'yaml'
 
-# Functions are stored in generated files as both Procs (:function) and 
-# Strings (:function_id). The String version makes comparisons of Procs much 
+# Functions are stored in generated files as both Procs (:function) and
+# Strings (:function_id). The String version makes comparisons of Procs much
 # easier.
 #
 # TODO:
@@ -83,7 +83,7 @@ def parse_holiday_defs(module_name, files)
       end
 
       # shouldn't allow the same region twice
-      str << ":name => \"#{rule['name']}\", :regions => [:" + rule['regions'].uniq.join(', :') + "]}"
+      str << ":key => \"#{rule['key']}\", :name => \"#{rule['name']}\", :regions => [:" + rule['regions'].uniq.join(', :') + "]}"
       rule_strings << str
     end
     month_str << rule_strings.join(",\n            ") + "]"
@@ -108,7 +108,7 @@ module Holidays
   #
   # Definitions loaded: #{files.join(', ')}
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/hu.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,16 +18,16 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Húsvét hétfő", :regions => [:hu]},
-            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :name => "Pünkösd hétfő", :regions => [:hu]}],
-      1 => [{:mday => 1, :name => "Újév", :regions => [:hu]}],
-      3 => [{:mday => 15, :name => "1848/49-es forradalom és szabadságharc ünnepe", :regions => [:hu]}],
-      5 => [{:mday => 1, :name => "A munka ünnepe", :regions => [:hu]}],
-      8 => [{:mday => 20, :name => "Az államalapítás ünnepe", :regions => [:hu]}],
-      10 => [{:mday => 23, :name => "1956-os forradalom és szabadságharc ünnepe", :regions => [:hu]}],
-      11 => [{:mday => 1, :name => "Mindenszentek", :regions => [:hu]}],
-      12 => [{:mday => 25, :name => "Karácsony", :regions => [:hu]},
-            {:mday => 26, :name => "Karácsony", :regions => [:hu]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Húsvét hétfő", :regions => [:hu]},
+            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :key => "", :name => "Pünkösd hétfő", :regions => [:hu]}],
+      1 => [{:mday => 1, :key => "", :name => "Újév", :regions => [:hu]}],
+      3 => [{:mday => 15, :key => "", :name => "1848/49-es forradalom és szabadságharc ünnepe", :regions => [:hu]}],
+      5 => [{:mday => 1, :key => "", :name => "A munka ünnepe", :regions => [:hu]}],
+      8 => [{:mday => 20, :key => "", :name => "Az államalapítás ünnepe", :regions => [:hu]}],
+      10 => [{:mday => 23, :key => "", :name => "1956-os forradalom és szabadságharc ünnepe", :regions => [:hu]}],
+      11 => [{:mday => 1, :key => "", :name => "Mindenszentek", :regions => [:hu]}],
+      12 => [{:mday => 25, :key => "", :name => "Karácsony", :regions => [:hu]},
+            {:mday => 26, :key => "", :name => "Karácsony", :regions => [:hu]}]
       }
     end
   end

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/nl.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,19 +18,19 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Goede Vrijdag", :regions => [:nl]},
-            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :name => "Pasen", :regions => [:nl]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Pasen", :regions => [:nl]},
-            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :name => "Hemelvaartsdag", :regions => [:nl]},
-            {:function => lambda { |year| Holidays.easter(year)+49 }, :function_id => "easter(year)+49", :name => "Pinksteren", :regions => [:nl]},
-            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :name => "Pinksteren", :regions => [:nl]}],
-      1 => [{:mday => 1, :name => "Nieuwjaar", :regions => [:nl]}],
-      4 => [{:mday => 27, :name => "Koningsdag", :regions => [:nl]}],
-      5 => [{:mday => 4, :name => "Dodenherdenking", :regions => [:nl]},
-            {:mday => 5, :name => "Bevrijdingsdag", :regions => [:nl]}],
-      12 => [{:mday => 5, :type => :informal, :name => "Sinterklaas", :regions => [:nl]},
-            {:mday => 25, :name => "Kerstmis", :regions => [:nl]},
-            {:mday => 26, :name => "Kerstmis", :regions => [:nl]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "good_friday", :name => "Goede Vrijdag", :regions => [:nl]},
+            {:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :key => "easter_sunday", :name => "Eerste Paasdag", :regions => [:nl]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "easter_monday", :name => "Tweede Paasdag", :regions => [:nl]},
+            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :key => "ascension_day", :name => "Hemelvaartsdag", :regions => [:nl]},
+            {:function => lambda { |year| Holidays.easter(year)+49 }, :function_id => "easter(year)+49", :key => "whit_sunday", :name => "Eerste Pinksterdag", :regions => [:nl]},
+            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :key => "whit_monday", :name => "Tweede Pinksterdag", :regions => [:nl]}],
+      1 => [{:mday => 1, :key => "new_year", :name => "Nieuwjaar", :regions => [:nl]}],
+      4 => [{:mday => 27, :key => "kings_day", :name => "Koningsdag", :regions => [:nl]}],
+      5 => [{:mday => 4, :key => "remembrance_day", :name => "Dodenherdenking", :regions => [:nl]},
+            {:mday => 5, :key => "liberation_day", :name => "Bevrijdingsdag", :regions => [:nl]}],
+      12 => [{:mday => 5, :type => :informal, :key => "saint_nicholas", :name => "Sinterklaas", :regions => [:nl]},
+            {:mday => 25, :key => "christmas_day", :name => "Eerste Kerstdag", :regions => [:nl]},
+            {:mday => 26, :key => "boxing_day", :name => "Tweede Kerstdag", :regions => [:nl]}]
       }
     end
   end

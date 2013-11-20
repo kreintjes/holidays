@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/ecb_target.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,12 +18,12 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Good Friday", :regions => [:ecb_target]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Easter Monday", :regions => [:ecb_target]}],
-      1 => [{:mday => 1, :name => "New Year's Day", :regions => [:ecb_target]}],
-      5 => [{:mday => 1, :name => "Labour Day", :regions => [:ecb_target]}],
-      12 => [{:mday => 25, :name => "Christmas Day", :regions => [:ecb_target]},
-            {:mday => 26, :name => "Christmas Holiday", :regions => [:ecb_target]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Good Friday", :regions => [:ecb_target]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Easter Monday", :regions => [:ecb_target]}],
+      1 => [{:mday => 1, :key => "", :name => "New Year's Day", :regions => [:ecb_target]}],
+      5 => [{:mday => 1, :key => "", :name => "Labour Day", :regions => [:ecb_target]}],
+      12 => [{:mday => 25, :key => "", :name => "Christmas Day", :regions => [:ecb_target]},
+            {:mday => 26, :key => "", :name => "Christmas Holiday", :regions => [:ecb_target]}]
       }
     end
   end

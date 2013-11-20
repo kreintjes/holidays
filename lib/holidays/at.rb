@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/at.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,19 +18,19 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Ostermontag", :regions => [:at]},
-            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :name => "Christi Himmelfahrt", :regions => [:at]},
-            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :name => "Pfingstmontag", :regions => [:at]},
-            {:function => lambda { |year| Holidays.easter(year)+60 }, :function_id => "easter(year)+60", :name => "Fronleichnam", :regions => [:at]}],
-      1 => [{:mday => 1, :name => "Neujahrstag", :regions => [:at]},
-            {:mday => 6, :name => "Heilige Drei Könige", :regions => [:at]}],
-      5 => [{:mday => 1, :name => "Staatsfeiertag", :regions => [:at]}],
-      8 => [{:mday => 15, :name => "Mariä Himmelfahrt", :regions => [:at]}],
-      10 => [{:mday => 26, :name => "Nationalfeiertag", :regions => [:at]}],
-      11 => [{:mday => 1, :name => "Allerheiligen", :regions => [:at]}],
-      12 => [{:mday => 8, :name => "Mariä Empfägnis", :regions => [:at]},
-            {:mday => 25, :name => "1. Weihnachtstag", :regions => [:at]},
-            {:mday => 26, :name => "2. Weihnachtstag", :regions => [:at]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Ostermontag", :regions => [:at]},
+            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :key => "", :name => "Christi Himmelfahrt", :regions => [:at]},
+            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :key => "", :name => "Pfingstmontag", :regions => [:at]},
+            {:function => lambda { |year| Holidays.easter(year)+60 }, :function_id => "easter(year)+60", :key => "", :name => "Fronleichnam", :regions => [:at]}],
+      1 => [{:mday => 1, :key => "", :name => "Neujahrstag", :regions => [:at]},
+            {:mday => 6, :key => "", :name => "Heilige Drei Könige", :regions => [:at]}],
+      5 => [{:mday => 1, :key => "", :name => "Staatsfeiertag", :regions => [:at]}],
+      8 => [{:mday => 15, :key => "", :name => "Mariä Himmelfahrt", :regions => [:at]}],
+      10 => [{:mday => 26, :key => "", :name => "Nationalfeiertag", :regions => [:at]}],
+      11 => [{:mday => 1, :key => "", :name => "Allerheiligen", :regions => [:at]}],
+      12 => [{:mday => 8, :key => "", :name => "Mariä Empfägnis", :regions => [:at]},
+            {:mday => 25, :key => "", :name => "1. Weihnachtstag", :regions => [:at]},
+            {:mday => 26, :key => "", :name => "2. Weihnachtstag", :regions => [:at]}]
       }
     end
   end

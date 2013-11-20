@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/fr.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,19 +18,19 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :type => :informal, :name => "Pâques", :regions => [:fr]},
-            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :name => "Lundi de Pâques", :regions => [:fr]},
-            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :name => "Ascension", :regions => [:fr]},
-            {:function => lambda { |year| Holidays.easter(year)+49 }, :function_id => "easter(year)+49", :type => :informal, :name => "Pentecôte", :regions => [:fr]},
-            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :name => "Lundi de Pentecôte", :regions => [:fr]}],
-      1 => [{:mday => 1, :name => "Jour de l'an", :regions => [:fr]}],
-      5 => [{:mday => 1, :name => "Fête du travail", :regions => [:fr]},
-            {:mday => 8, :name => "Victoire 1945", :regions => [:fr]}],
-      7 => [{:mday => 14, :name => "Fête nationale", :regions => [:fr]}],
-      8 => [{:mday => 15, :name => "Assomption", :regions => [:fr]}],
-      11 => [{:mday => 1, :name => "Toussaint", :regions => [:fr]},
-            {:mday => 11, :name => "Armistice 1918", :regions => [:fr]}],
-      12 => [{:mday => 25, :name => "Noël", :regions => [:fr]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year) }, :function_id => "easter(year)", :type => :informal, :key => "", :name => "Pâques", :regions => [:fr]},
+            {:function => lambda { |year| Holidays.easter(year)+1 }, :function_id => "easter(year)+1", :key => "", :name => "Lundi de Pâques", :regions => [:fr]},
+            {:function => lambda { |year| Holidays.easter(year)+39 }, :function_id => "easter(year)+39", :key => "", :name => "Ascension", :regions => [:fr]},
+            {:function => lambda { |year| Holidays.easter(year)+49 }, :function_id => "easter(year)+49", :type => :informal, :key => "", :name => "Pentecôte", :regions => [:fr]},
+            {:function => lambda { |year| Holidays.easter(year)+50 }, :function_id => "easter(year)+50", :key => "", :name => "Lundi de Pentecôte", :regions => [:fr]}],
+      1 => [{:mday => 1, :key => "", :name => "Jour de l'an", :regions => [:fr]}],
+      5 => [{:mday => 1, :key => "", :name => "Fête du travail", :regions => [:fr]},
+            {:mday => 8, :key => "", :name => "Victoire 1945", :regions => [:fr]}],
+      7 => [{:mday => 14, :key => "", :name => "Fête nationale", :regions => [:fr]}],
+      8 => [{:mday => 15, :key => "", :name => "Assomption", :regions => [:fr]}],
+      11 => [{:mday => 1, :key => "", :name => "Toussaint", :regions => [:fr]},
+            {:mday => 11, :key => "", :name => "Armistice 1918", :regions => [:fr]}],
+      12 => [{:mday => 25, :key => "", :name => "Noël", :regions => [:fr]}]
       }
     end
   end

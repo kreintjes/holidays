@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/ar.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,20 +18,20 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-3 }, :function_id => "easter(year)-3", :name => "Jueves Santo", :regions => [:ar]},
-            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Viernes Santo", :regions => [:ar]}],
-      1 => [{:mday => 1, :name => "Año Nuevo", :regions => [:ar]}],
-      3 => [{:mday => 24, :name => "Día Nacional de la Memoria por la Verdad y la Justicia", :regions => [:ar]}],
-      4 => [{:mday => 2, :name => "Día del Veterano y de los Caídos en la Guerra de Malvinas", :regions => [:ar]}],
-      5 => [{:mday => 1, :name => "Día del Trabajador", :regions => [:ar]},
-            {:mday => 25, :name => "Día de la Revolución de Mayo", :regions => [:ar]}],
-      6 => [{:mday => 20, :name => "Día de la Bandera", :regions => [:ar]}],
-      7 => [{:mday => 9, :name => "Día de la Independencia", :regions => [:ar]}],
-      8 => [{:wday => 1, :week => 3, :name => "Paso a la Inmortalidad del General José de San Martín", :regions => [:ar]}],
-      10 => [{:wday => 1, :week => 2, :name => "Día del Respeto a la Diversidad Cultural", :regions => [:ar]}],
-      11 => [{:wday => 1, :week => 4, :name => "Día de la Soberanía nacional", :regions => [:ar]}],
-      12 => [{:mday => 8, :name => "Inmaculada Concepción de María", :regions => [:ar]},
-            {:mday => 25, :name => "Navidad", :regions => [:ar]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-3 }, :function_id => "easter(year)-3", :key => "", :name => "Jueves Santo", :regions => [:ar]},
+            {:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Viernes Santo", :regions => [:ar]}],
+      1 => [{:mday => 1, :key => "", :name => "Año Nuevo", :regions => [:ar]}],
+      3 => [{:mday => 24, :key => "", :name => "Día Nacional de la Memoria por la Verdad y la Justicia", :regions => [:ar]}],
+      4 => [{:mday => 2, :key => "", :name => "Día del Veterano y de los Caídos en la Guerra de Malvinas", :regions => [:ar]}],
+      5 => [{:mday => 1, :key => "", :name => "Día del Trabajador", :regions => [:ar]},
+            {:mday => 25, :key => "", :name => "Día de la Revolución de Mayo", :regions => [:ar]}],
+      6 => [{:mday => 20, :key => "", :name => "Día de la Bandera", :regions => [:ar]}],
+      7 => [{:mday => 9, :key => "", :name => "Día de la Independencia", :regions => [:ar]}],
+      8 => [{:wday => 1, :week => 3, :key => "", :name => "Paso a la Inmortalidad del General José de San Martín", :regions => [:ar]}],
+      10 => [{:wday => 1, :week => 2, :key => "", :name => "Día del Respeto a la Diversidad Cultural", :regions => [:ar]}],
+      11 => [{:wday => 1, :week => 4, :key => "", :name => "Día de la Soberanía nacional", :regions => [:ar]}],
+      12 => [{:mday => 8, :key => "", :name => "Inmaculada Concepción de María", :regions => [:ar]},
+            {:mday => 25, :key => "", :name => "Navidad", :regions => [:ar]}]
       }
     end
   end

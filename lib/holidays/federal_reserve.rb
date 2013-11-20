@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/federal_reserve.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,20 +18,20 @@ module Holidays
 
     def self.holidays_by_month
       {
-              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :name => "Good Friday", :regions => [:federal_reserve]}],
-      1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "New Year's Day", :regions => [:federal_reserve]},
-            {:wday => 1, :week => 3, :name => "Birthday of Martin Luther King, Jr", :regions => [:federal_reserve]},
-            {:function => lambda { |year| Holidays.us_inauguration_day(year) }, :function_id => "us_inauguration_day(year)", :name => "Inauguration Day", :regions => [:federal_reserve]}],
-      2 => [{:wday => 1, :week => 3, :name => "Washington's Birthday", :regions => [:federal_reserve]}],
-      5 => [{:wday => 1, :week => -1, :name => "Memorial Day", :regions => [:federal_reserve]}],
-      7 => [{:mday => 4, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "Independence Day", :regions => [:federal_reserve]}],
-      9 => [{:wday => 1, :week => 1, :name => "Labor Day", :regions => [:federal_reserve]}],
-      10 => [{:wday => 1, :week => 2, :name => "Columbus Day", :regions => [:federal_reserve]}],
-      11 => [{:mday => 11, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "Veterans Day", :regions => [:federal_reserve]},
-            {:wday => 4, :week => 4, :name => "Thanksgiving Day", :regions => [:federal_reserve]}],
-      12 => [{:mday => 24, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "Christmas Eve", :regions => [:federal_reserve]},
-            {:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "Christmas Day", :regions => [:federal_reserve]},
-            {:mday => 31, :name => "New Year's Eve", :regions => [:federal_reserve]}]
+              0 => [{:function => lambda { |year| Holidays.easter(year)-2 }, :function_id => "easter(year)-2", :key => "", :name => "Good Friday", :regions => [:federal_reserve]}],
+      1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "New Year's Day", :regions => [:federal_reserve]},
+            {:wday => 1, :week => 3, :key => "", :name => "Birthday of Martin Luther King, Jr", :regions => [:federal_reserve]},
+            {:function => lambda { |year| Holidays.us_inauguration_day(year) }, :function_id => "us_inauguration_day(year)", :key => "", :name => "Inauguration Day", :regions => [:federal_reserve]}],
+      2 => [{:wday => 1, :week => 3, :key => "", :name => "Washington's Birthday", :regions => [:federal_reserve]}],
+      5 => [{:wday => 1, :week => -1, :key => "", :name => "Memorial Day", :regions => [:federal_reserve]}],
+      7 => [{:mday => 4, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "Independence Day", :regions => [:federal_reserve]}],
+      9 => [{:wday => 1, :week => 1, :key => "", :name => "Labor Day", :regions => [:federal_reserve]}],
+      10 => [{:wday => 1, :week => 2, :key => "", :name => "Columbus Day", :regions => [:federal_reserve]}],
+      11 => [{:mday => 11, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "Veterans Day", :regions => [:federal_reserve]},
+            {:wday => 4, :week => 4, :key => "", :name => "Thanksgiving Day", :regions => [:federal_reserve]}],
+      12 => [{:mday => 24, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "Christmas Eve", :regions => [:federal_reserve]},
+            {:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "Christmas Day", :regions => [:federal_reserve]},
+            {:mday => 31, :key => "", :name => "New Year's Eve", :regions => [:federal_reserve]}]
       }
     end
   end

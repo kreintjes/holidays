@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/nerc.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,12 +18,12 @@ module Holidays
 
     def self.holidays_by_month
       {
-              1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "New Year's Day", :regions => [:nerc]}],
-      5 => [{:wday => 1, :week => -1, :name => "Memorial Day", :regions => [:nerc]}],
-      7 => [{:mday => 4, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "Independence Day", :regions => [:nerc]}],
-      9 => [{:wday => 1, :week => 1, :name => "Labor Day", :regions => [:nerc]}],
-      11 => [{:wday => 4, :week => 4, :name => "Thanksgiving", :regions => [:nerc]}],
-      12 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :name => "Christmas Day", :regions => [:nerc]}]
+              1 => [{:mday => 1, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "New Year's Day", :regions => [:nerc]}],
+      5 => [{:wday => 1, :week => -1, :key => "", :name => "Memorial Day", :regions => [:nerc]}],
+      7 => [{:mday => 4, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "Independence Day", :regions => [:nerc]}],
+      9 => [{:wday => 1, :week => 1, :key => "", :name => "Labor Day", :regions => [:nerc]}],
+      11 => [{:wday => 4, :week => 4, :key => "", :name => "Thanksgiving", :regions => [:nerc]}],
+      12 => [{:mday => 25, :observed => lambda { |date| Holidays.to_monday_if_sunday(date) }, :observed_id => "to_monday_if_sunday", :key => "", :name => "Christmas Day", :regions => [:nerc]}]
       }
     end
   end

@@ -4,7 +4,7 @@ module Holidays
   #
   # Definitions loaded: data/jp.yaml
   #
-  # To use the definitions in this file, load it right after you load the 
+  # To use the definitions in this file, load it right after you load the
   # Holiday gem:
   #
   #   require 'holidays'
@@ -18,34 +18,34 @@ module Holidays
 
     def self.holidays_by_month
       {
-              1 => [{:mday => 1, :name => "元日", :regions => [:jp]},
-            {:wday => 1, :week => 2, :name => "成人の日", :regions => [:jp]}],
-      2 => [{:mday => 11, :name => "建国記念日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 2, 11) }, :function_id => "jp_substitute_holiday(year, 2, 11)", :name => "振替休日", :regions => [:jp]}],
-      3 => [{:function => lambda { |year| Holidays.jp_vernal_equinox_day(year) }, :function_id => "jp_vernal_equinox_day(year)", :name => "春分の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(Holidays.jp_vernal_equinox_day(year)) }, :function_id => "jp_substitute_holiday(Holidays.jp_vernal_equinox_day(year))", :name => "振替休日", :regions => [:jp]}],
-      4 => [{:mday => 29, :name => "昭和の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 4, 29) }, :function_id => "jp_substitute_holiday(year, 4, 29)", :name => "振替休日", :regions => [:jp]}],
-      5 => [{:mday => 3, :name => "憲法記念日", :regions => [:jp]},
-            {:mday => 4, :name => "みどりの日", :regions => [:jp]},
-            {:mday => 5, :name => "こどもの日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 5, 3) }, :function_id => "jp_substitute_holiday(year, 5, 3)", :name => "振替休日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 5, 5) }, :function_id => "jp_substitute_holiday(year, 5, 5)", :name => "振替休日", :regions => [:jp]}],
-      7 => [{:wday => 1, :week => 3, :name => "海の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 7, Date.calculate_mday(year, 7, 3, 1)) }, :function_id => "jp_substitute_holiday(year, 7, Date.calculate_mday(year, 7, 3, 1))", :name => "振替休日", :regions => [:jp]}],
-      9 => [{:wday => 1, :week => 3, :name => "敬老の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 9, Date.calculate_mday(year, 9, 3, 1)) }, :function_id => "jp_substitute_holiday(year, 9, Date.calculate_mday(year, 9, 3, 1))", :name => "振替休日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_citizons_holiday(year) }, :function_id => "jp_citizons_holiday(year)", :name => "国民の休日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_national_culture_day(year) }, :function_id => "jp_national_culture_day(year)", :name => "秋分の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(Holidays.jp_national_culture_day(year)) }, :function_id => "jp_substitute_holiday(Holidays.jp_national_culture_day(year))", :name => "振替休日", :regions => [:jp]}],
-      10 => [{:wday => 1, :week => 2, :name => "体育の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 10, Date.calculate_mday(year, 10, 2, 1)) }, :function_id => "jp_substitute_holiday(year, 10, Date.calculate_mday(year, 10, 2, 1))", :name => "振替休日", :regions => [:jp]}],
-      11 => [{:mday => 3, :name => "文化の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 11, 3) }, :function_id => "jp_substitute_holiday(year, 11, 3)", :name => "振替休日", :regions => [:jp]},
-            {:mday => 23, :name => "勤労感謝の日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 11, 23) }, :function_id => "jp_substitute_holiday(year, 11, 23)", :name => "振替休日", :regions => [:jp]}],
-      12 => [{:mday => 23, :name => "天皇誕生日", :regions => [:jp]},
-            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 12, 23) }, :function_id => "jp_substitute_holiday(year, 12, 23)", :name => "振替休日", :regions => [:jp]}]
+              1 => [{:mday => 1, :key => "", :name => "元日", :regions => [:jp]},
+            {:wday => 1, :week => 2, :key => "", :name => "成人の日", :regions => [:jp]}],
+      2 => [{:mday => 11, :key => "", :name => "建国記念日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 2, 11) }, :function_id => "jp_substitute_holiday(year, 2, 11)", :key => "", :name => "振替休日", :regions => [:jp]}],
+      3 => [{:function => lambda { |year| Holidays.jp_vernal_equinox_day(year) }, :function_id => "jp_vernal_equinox_day(year)", :key => "", :name => "春分の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(Holidays.jp_vernal_equinox_day(year)) }, :function_id => "jp_substitute_holiday(Holidays.jp_vernal_equinox_day(year))", :key => "", :name => "振替休日", :regions => [:jp]}],
+      4 => [{:mday => 29, :key => "", :name => "昭和の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 4, 29) }, :function_id => "jp_substitute_holiday(year, 4, 29)", :key => "", :name => "振替休日", :regions => [:jp]}],
+      5 => [{:mday => 3, :key => "", :name => "憲法記念日", :regions => [:jp]},
+            {:mday => 4, :key => "", :name => "みどりの日", :regions => [:jp]},
+            {:mday => 5, :key => "", :name => "こどもの日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 5, 3) }, :function_id => "jp_substitute_holiday(year, 5, 3)", :key => "", :name => "振替休日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 5, 5) }, :function_id => "jp_substitute_holiday(year, 5, 5)", :key => "", :name => "振替休日", :regions => [:jp]}],
+      7 => [{:wday => 1, :week => 3, :key => "", :name => "海の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 7, Date.calculate_mday(year, 7, 3, 1)) }, :function_id => "jp_substitute_holiday(year, 7, Date.calculate_mday(year, 7, 3, 1))", :key => "", :name => "振替休日", :regions => [:jp]}],
+      9 => [{:wday => 1, :week => 3, :key => "", :name => "敬老の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 9, Date.calculate_mday(year, 9, 3, 1)) }, :function_id => "jp_substitute_holiday(year, 9, Date.calculate_mday(year, 9, 3, 1))", :key => "", :name => "振替休日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_citizons_holiday(year) }, :function_id => "jp_citizons_holiday(year)", :key => "", :name => "国民の休日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_national_culture_day(year) }, :function_id => "jp_national_culture_day(year)", :key => "", :name => "秋分の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(Holidays.jp_national_culture_day(year)) }, :function_id => "jp_substitute_holiday(Holidays.jp_national_culture_day(year))", :key => "", :name => "振替休日", :regions => [:jp]}],
+      10 => [{:wday => 1, :week => 2, :key => "", :name => "体育の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 10, Date.calculate_mday(year, 10, 2, 1)) }, :function_id => "jp_substitute_holiday(year, 10, Date.calculate_mday(year, 10, 2, 1))", :key => "", :name => "振替休日", :regions => [:jp]}],
+      11 => [{:mday => 3, :key => "", :name => "文化の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 11, 3) }, :function_id => "jp_substitute_holiday(year, 11, 3)", :key => "", :name => "振替休日", :regions => [:jp]},
+            {:mday => 23, :key => "", :name => "勤労感謝の日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 11, 23) }, :function_id => "jp_substitute_holiday(year, 11, 23)", :key => "", :name => "振替休日", :regions => [:jp]}],
+      12 => [{:mday => 23, :key => "", :name => "天皇誕生日", :regions => [:jp]},
+            {:function => lambda { |year| Holidays.jp_substitute_holiday(year, 12, 23) }, :function_id => "jp_substitute_holiday(year, 12, 23)", :key => "", :name => "振替休日", :regions => [:jp]}]
       }
     end
   end
